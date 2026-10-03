@@ -1,0 +1,27 @@
+{
+  "name": "healthtech-phone-otp-workflow",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/appointment_access.ts",
+    "start": "tsx src/appointment_access.ts",
+    "demo": "tsx scripts/run_appointment_flow.ts",
+    "test": "tsx --test test/appointment_notification.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.15.30",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
